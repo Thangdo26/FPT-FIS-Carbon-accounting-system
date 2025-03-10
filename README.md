@@ -62,12 +62,5 @@ carbon-accounting-system/
 2. Chạy file **sample_data.sql** để chèn dữ liệu mẫu.
 3. Chạy các truy vấn trong file **queries.sql** để kiểm tra kết quả.
 
-## Giải thích thiết kế
-- **Bảng companies:**  
-  Lưu trữ thông tin công ty và thiết lập mối quan hệ phân cấp thông qua trường `parent_company_id`. Điều này giúp dễ dàng xây dựng cấu trúc cây của các công ty con thuộc mỗi tenant.
-- **Bảng departments:**  
-  Liên kết phòng ban với công ty, cho phép quản lý các bộ phận bên trong mỗi công ty.
-- **Bảng activities:**  
-  Ghi nhận các hoạt động được thực hiện bởi các phòng ban, lưu trữ thông tin về loại, tên, giá trị và ngày thực hiện. Việc lưu trữ ngày thực hiện giúp hỗ trợ các báo cáo thời gian.
-- **Bảng emission_factors:**  
-  Lưu trữ hệ số phát thải cho từng loại hoạt động. Việc tách riêng bảng này giúp dễ dàng cập nhật và bảo trì hệ số mà không làm ảnh hưởng đến dữ liệu của các hoạt động.
+## Nhấn vào đây để đi tới thiết kế cơ sở dữ liệu của hệ thống (https://dbdiagram.io/d/67ceb96575d75cc8447cdaf0)
+
